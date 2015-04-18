@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.doer.modulo2.FragmentoLista">
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="BIENVENIDO"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_gravity="center"/>
+    <AnalogClock
+        android:layout_width="301dp"
+        android:layout_height="301dp"
+        android:id="@+id/analogClock"
+        android:layout_gravity="center" />
+    </LinearLayout>
+
+</FrameLayout>

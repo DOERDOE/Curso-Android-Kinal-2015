@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Restaurante</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="fragment1">Fragment 1</string>
+    <string name="fragment2">Fragment 2</string>
+    <string name="fragment3">Fragment 3</string>
+    <string name="drawer_open">Menu Abierto</string>
+    <string name="drawer_close">Menu Cerrado</string>
+    <string name="nombre">Nombre:</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="title_activity_saludo">saludo</string>
+    <string name="password">Contraseña: </string>
+    <string name="saludo">Bienvenido </string>
+    <string name="title_activity_activity_orden">activity_orden</string>
+    <string name="verOrdenes">Ver Ordenes</string>
+    <string name="crearOrden">Crear Orden</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_orden">OrdenActivity</string>
+    <string name="title_activity_widget_config">WidgetConfig</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_ver_ordenes">VerOrdenes</string>
+    <string name="cons">consultar</string>
+    <string name="elim">eliminar</string>
+    <string name="act">actualizar</string>
+    <string name="ins">Insertar</string>
+    <string name="nreg">ID:</string>
+</resources>

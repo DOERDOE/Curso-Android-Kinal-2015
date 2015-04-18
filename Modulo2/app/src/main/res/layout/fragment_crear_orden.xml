@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.doer.modulo2.CrearOrden"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="538dp"
+        android:orientation="vertical"
+        android:layout_weight="0.95">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+               <FrameLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@android:id/tabcontent" >
+
+                    <LinearLayout android:id="@+id/tabMenu"
+                        android:orientation="vertical"
+                        android:layout_width="380dp"
+                        android:layout_height="match_parent"
+                        android:weightSum="1">
+
+                        <!--<TextView android:id="@+id/textView1"
+                            android:text="Bienvenido"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TableRow>
+
+                                <LinearLayout android:orientation="vertical">
+
+                                    <TextView android:id="@+id/textView1"
+                                        android:text="Pollo Frito"
+                                        android:layout_gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:layout_width="120sp"
+                                        android:layout_height="120sp"
+                                        android:src="@drawable/chicken"
+                                        android:layout_column="1" />
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow>
+                                <TableLayout>
+                                    <TableRow>
+                                        <TextView android:id="@+id/textViewGuarniciones"
+                                            android:text="Guarniciones"
+                                            android:layout_gravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                    </TableRow>
+                                    <TableRow>
+                                        <LinearLayout android:orientation="horizontal">
+                                            <CheckBox android:id="@+id/Chk1"
+                                                android:layout_height="wrap_content"
+                                                android:layout_width="wrap_content"
+                                                android:text="Ensalada"/>
+                                            <CheckBox android:id="@+id/Chk2"
+                                                android:layout_height="wrap_content"
+                                                android:layout_width="wrap_content"
+                                                android:text="Lasaña"/>
+                                        </LinearLayout>
+                                    </TableRow>
+                                    <TableRow>
+                                        <LinearLayout android:orientation="horizontal">
+                                            <CheckBox android:id="@+id/Chk3"
+                                                android:layout_height="wrap_content"
+                                                android:layout_width="wrap_content"
+                                                android:text="Hamburguesas"/>
+                                            <CheckBox android:id="@+id/Chk4"
+                                                android:layout_height="wrap_content"
+                                                android:layout_width="wrap_content"
+                                                android:text="Submarinos"/>
+                                        </LinearLayout>
+                                    </TableRow>
+                                </TableLayout>
+                            </TableRow>
+                            <TableRow>
+                                <TextView android:id="@+id/textViewSopa"
+                                    android:text="¿Desea sopa?"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <ToggleButton
+                                    android:id="@+id/TGBSopa"
+                                    android:textOff="No"
+                                    android:textOn="Si"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="¿Gaseosa o Fresco?"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <ToggleButton android:id="@+id/TGBFrescoOGaseosa"
+                                    android:textOff="Fresco"
+                                    android:textOn="Gaseosa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"/>
+                            </TableRow>
+                            <TableRow>
+                                <Button
+                                    android:id="@+id/BtnGuardar"
+                                    android:text="GUARDAR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.40" />
+                            </TableRow>
+                        </TableLayout>
+
+
+                        <!-- <TextView android:id="@+id/textView2"
+                             android:text="Perfil"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />
+                     -->
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,128 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LytContenedorSaludo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="phone">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Contenido Principal -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- Menu Lateral -->
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:background="#111"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:layout_height="match_parent"/>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <RelativeLayout
+        android:id="@+id/ContenedorFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        </RelativeLayout>
+<!--
+
+<TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/tabContenedor1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView android:id="@+id/textView1"
+                        android:text="Bienvenido"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView android:id="@+id/TxtSaludo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
+                        android:src="@drawable/covered"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+-->
+    <LinearLayout
+        android:id="@+id/BarraBotones"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/buttonBarStyle"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:paddingTop="4dp"
+        android:background="@color/ripple_material_dark">
+
+        <Button
+            android:id="@+id/BtnVerOrdenes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ver Ordenes"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+        <Button
+            android:id="@+id/BtnCrearOrden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Crear Orden"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
