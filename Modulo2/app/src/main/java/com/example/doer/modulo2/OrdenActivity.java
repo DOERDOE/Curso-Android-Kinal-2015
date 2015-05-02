@@ -66,8 +66,9 @@ public class OrdenActivity extends ActionBarActivity {
         Bundle bundle = this.getIntent().getExtras();
        // final String nombre = bundle.getString("NombreIngresado");
         //final String apellido = bundle.getString("ApellidoIngresado");
+
         this.idOrden = bundle.getString("idOrden");
-        if(this.idOrden!=""){
+        if((this.idOrden.equals("create")==false)){
             Cursor c = db.rawQuery("SELECT * FROM Orden WHERE Orden.idOrden ="+idOrden+"", null);
             if (c.moveToFirst()) {
                 //Recorremos el cursor hasta que no haya más registros

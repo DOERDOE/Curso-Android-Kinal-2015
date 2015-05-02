@@ -110,6 +110,7 @@ public class SaludoActivity extends ActionBarActivity implements View.OnTouchLis
                     //Añadimos la informacion al intent
                     intent.putExtras(b);
                    */ //Iniciamos la nueva actividad
+                    intent.putExtra("idOrden","create");
                     startActivity(intent);
                 }
             });
