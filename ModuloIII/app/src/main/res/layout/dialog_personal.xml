@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ImageViewIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_fire"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextDialogLinea1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aqui puede ir lo que quieras"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/TextDialogLinea2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="De la forma que quieras"
+            android:background="#ff7de2ff"
+            android:textColor="#ffffd719" />
+
+    </LinearLayout>
+
+</LinearLayout>
